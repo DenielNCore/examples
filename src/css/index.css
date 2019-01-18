@@ -1,0 +1,31 @@
+.canvas {
+    position: absolute;
+}
+input {
+    font-size: 24px;
+    /*size: 22px;*/
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+
+span {
+    color: darkmagenta;
+    text-align: center;
+    font-size: 24px;
+}
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resize {
+    width: 210px;
+    position: absolute;
+    right: 12px;
+}
+.settings {
+    flex-direction: column;
+}
