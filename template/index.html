@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-
-
-    <div class="canvas"></div>
-    <div class="resize">
-        <div class="settings">
-            <input type="number" class="width" value="480" />
-            <span>Ширина</span>
+    <div id="wrapper">
+        <div id="view-port">
+            <div class="canvas"></div>    
         </div>
-        <div class="settings">
-            <input type="number" class="height" value="480" />
-            <span>Высота</span>
+        <div id="settings-van"><i class="fas fa-bars"></i></div>
+        <div id="resize-settings">
+            <div class="settings" id="rotate">
+                <i class="fas fa-undo"> Rotate</i>
+            </div>
+            <div class="settings">
+                <label for="width">Ширина</label>
+                <input type="number" name="width" id="settings-width" value="480" />
+            </div>
+            <div class="settings">
+                <label for="height">Высота</label>
+                <input type="number" name="height" id="settings-height" value="480" />
+            </div>
         </div>
     </div>
 
