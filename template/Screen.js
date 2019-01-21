@@ -21,11 +21,11 @@ Screen.init = function (container) {
 
     LayoutManager.fitLayout(Screen.size.w, Screen.size.h);
 
-    document.body.getElementsByClassName('canvas')[0].addEventListener("resize", LayoutManager.fitLayout);
+    Screen.container.addEventListener("resize", LayoutManager.fitLayout);
 
     console.dir(document.body.getElementsByClassName('canvas')[0]);
 
-    // setInterval(LayoutManager.fitLayout, 100);
+    setInterval(LayoutManager.fitLayout, 100);
 };
 
 Screen.showWindow = function(w) {
@@ -58,7 +58,7 @@ Screen.onResize = function() {
 };
 
 Screen.start = function() {
-    Screen.showWindow(new Field());
+    Screen.showWindow(new Stage());
 };
 
 Screen.tick = function() {

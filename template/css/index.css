@@ -2,20 +2,10 @@
     position: absolute;
     resize: both;
     overflow: hidden;
-    /*border: 3px solid red;*/
+    border: 3px solid red;
     padding: 10px;
 
 }
-
-/*.t1 {*/
-    /*display: block;*/
-    /*height: 600px;*/
-    /*width: 600px;*/
-    /*resize: both;*/
-    /*overflow: scroll;*/
-    /*border: 1px solid red;*/
-    /*padding: 1px;*/
-/*}*/
 
 input {
     font-size: 24px;
