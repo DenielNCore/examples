@@ -14,5 +14,6 @@ Stage.prototype.createChildren = function() {
 };
 
 Stage.prototype.onResize = function(){
+    console.log('w');
 
 };

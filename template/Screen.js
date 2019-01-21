@@ -23,7 +23,7 @@ Screen.init = function (container) {
 
     Screen.container.addEventListener("resize", LayoutManager.fitLayout);
 
-    console.dir(document.body.getElementsByClassName('canvas')[0]);
+    // console.dir(document.body.getElementsByClassName('canvas')[0]);
 
     setInterval(LayoutManager.fitLayout, 100);
 };
@@ -45,7 +45,7 @@ Screen.showWindow = function(w) {
     Screen.app.stage.addChildAt(w, 0);
     Screen.currentWindow = w;
     if(Screen.currentWindow.onShow) Screen.currentWindow.onShow();
-    if(Screen.currentWindow.onResize) Screen.currentWindow.onResize();
+    // if(Screen.currentWindow.onResize) Screen.currentWindow.onResize();
     w.position.set(Screen.app.renderer.width/2, Screen.app.renderer.height/2);
 };
 
@@ -79,4 +79,4 @@ Screen.tick = function() {
 
 Screen.init();
 // Screen.start();
-Screen.onResize();
+// Screen.onResize();

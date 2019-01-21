@@ -21,10 +21,9 @@ Screen.init = function (container) {
 
     LayoutManager.fitLayout(Screen.size.w, Screen.size.h);
 
-    Screen.container.addEventListener("resize", LayoutManager.fitLayout);
+    // Screen.container.addEventListener("resize", LayoutManager.fitLayout);
 
-    console.dir(document.body.getElementsByClassName('canvas')[0]);
-
+    // console.dir(document.body.getElementsByClassName('canvas')[0]);
     setInterval(LayoutManager.fitLayout, 100);
 };
 
@@ -79,4 +78,4 @@ Screen.tick = function() {
 
 Screen.init();
 // Screen.start();
-Screen.onResize();
+// Screen.onResize();

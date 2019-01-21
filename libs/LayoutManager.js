@@ -64,7 +64,7 @@ LayoutManager.fitLayout = function(w, h) {
 
     Screen.onResize();
 
-    LayoutManager.eventEmitter.emit("resized", {width: w, height: h});
+    // LayoutManager.eventEmitter.emit("resized", {width: w, height: h});
 
-    setTimeout(LayoutManager.hideAddressBar, 100);
+    // setTimeout(LayoutManager.hideAddressBar, 100);
 };
