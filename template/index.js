@@ -1,4 +1,8 @@
+
+
 (function (window, document) {
+
+
 
 	var Manager = {};
 	
@@ -20,5 +24,30 @@
 
 
 	window.manager = Manager;
-	window.addEventListener("load", Manager.init);
-})(window, document)
+	window.addEventListener("load", loadGame);
+
+
+	var loadGame = function() {
+        Manager.init();
+        domReadyHandler();
+    };
+
+    // window.addEventListener("load", domReadyHandler);
+
+
+
+    function domReadyHandler() {
+        // window.removeEventListener("load", domReadyHandler);
+        runGame();
+    }
+
+    function runGame() {
+        Screen.init();
+        setInterval(LayoutManager.fitLayout, 100);
+    }
+
+
+})(window, document);
+
+
+

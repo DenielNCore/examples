@@ -19,6 +19,8 @@ LayoutManager.hideAddressBar = function() {
 
 LayoutManager.fitLayout = function(w, h) {
 
+    // console.log(w, h, 'ww');
+
     if (typeof w != "number" || typeof h != "number") {
         w = Screen.container.clientWidth - LayoutManager.paddingSize * 2;
         h = Screen.container.clientHeight - LayoutManager.paddingSize * 2;
@@ -55,10 +57,13 @@ LayoutManager.fitLayout = function(w, h) {
     Screen.app.view.style.width = w + "px";
     Screen.app.view.style.height = h + "px";
 
+
+
     LayoutManager.gameWidth = gw;
     LayoutManager.gameHeight = gh;
-    LayoutManager.gameWidth = w;
-    LayoutManager.gameHeight = h;
+
+    // LayoutManager.gameWidth = w;
+    // LayoutManager.gameHeight = h;
 
     LayoutManager.scale = Math.min(w/gw, h/gh);
 

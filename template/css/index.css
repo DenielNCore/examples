@@ -22,7 +22,7 @@
 .canvas {
     /*ration about 1.77*/
     width: 36rem;
-    height: 64rem;
+    height: 36rem;
     overflow: hidden;
 }
 #settings-van {

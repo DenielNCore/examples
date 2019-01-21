@@ -14,6 +14,16 @@ Stage.prototype.createChildren = function() {
 };
 
 Stage.prototype.onResize = function(){
-    console.log('w');
+
+    let w = LayoutManager.gameWidth,
+        h = LayoutManager.gameHeight;
+
+
+    console.log(w, h);
+
+};
+
+Stage.prototype.tick = function(){
+
 
 };

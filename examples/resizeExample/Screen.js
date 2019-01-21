@@ -17,14 +17,15 @@ Screen.init = function (container) {
     app.ticker.add(Screen.tick);
     Screen.app = app;
 
+
+    LayoutManager.fitLayout();
+
     Screen.start();
 
-    LayoutManager.fitLayout(Screen.size.w, Screen.size.h);
+    // LayoutManager.fitLayout(Screen.size.w, Screen.size.h);
 
-    // Screen.container.addEventListener("resize", LayoutManager.fitLayout);
 
     // console.dir(document.body.getElementsByClassName('canvas')[0]);
-    setInterval(LayoutManager.fitLayout, 100);
 };
 
 Screen.showWindow = function(w) {
@@ -76,6 +77,6 @@ Screen.tick = function() {
     }
 };
 
-Screen.init();
+// Screen.init();
 // Screen.start();
 // Screen.onResize();
