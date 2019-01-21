@@ -1,35 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 10px;
+    box-sizing: border-box;
+    
+}
+#wrapper {
+    min-width: 80rem;
+    height: 100vh;
+    position: relative;
+    background-color: #e0ead0;
+}
+#view-port {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .canvas {
-    position: absolute;
-    resize: both;
+    /*ration about 1.77*/
+    width: 36rem;
+    height: 64rem;
     overflow: hidden;
-    border: 3px solid red;
-    padding: 10px;
 }
-
-input {
-    font-size: 24px;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-}
-
-span {
-    color: darkmagenta;
-    text-align: center;
-    font-size: 24px;
-}
-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.resize {
-    width: 210px;
+#settings-van {
     position: absolute;
-    right: 12px;
+    top: 1rem;
+    right: 22rem;
+    border: 2px solid black;
+    cursor: pointer;
 }
-.settings {
-    flex-direction: column;
+
+#settings-van > i {
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+#resize-settings {
+    position: absolute;
+    z-index: 10;
+    width: 20rem;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #77c657;
+    text-align: center;
+}
+
+#resize-settings  * {
+    display: inline-block;
+    width: 15rem;
+    margin: 0.5rem auto;
+    font-size: 2rem;
+}
+#rotate {
+    padding: 0.5rem;
+    background-color: #efec3e;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+label {
+    font-size: 2rem;
+}
+input {
+    font-size: 2.4rem;
+    height: 3rem;
+    text-align: center;
 }
