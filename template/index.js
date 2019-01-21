@@ -1,8 +1,4 @@
-
-
 (function (window, document) {
-
-
 
 	var Manager = {};
 	
@@ -16,13 +12,14 @@
 		}
 	}
 
+	//This is an entry point of my mechanic and ligic for front-end scripts
 	Manager.init = function () {
 		var elem = ["#settings-width", "#settings-height"];
 		Manager.cacheDom(elem);
 	}
 
 
-
+	//TODO I will remove this propery "window.manager", now it is just for testing
 	window.manager = Manager;
 	window.addEventListener("load", loadGame);
 
@@ -32,12 +29,8 @@
         domReadyHandler();
     };
 
-    // window.addEventListener("load", domReadyHandler);
-
-
-
+    //This is an entry point of Denis PIXI mechanic and logic
     function domReadyHandler() {
-        // window.removeEventListener("load", domReadyHandler);
         runGame();
     }
 
