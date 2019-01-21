@@ -22,6 +22,9 @@ Screen.init = function (container) {
     LayoutManager.fitLayout(Screen.size.w, Screen.size.h);
 
     document.body.getElementsByClassName('canvas')[0].addEventListener("resize", LayoutManager.fitLayout);
+
+    console.dir(document.body.getElementsByClassName('canvas')[0]);
+
     // setInterval(LayoutManager.fitLayout, 100);
 };
 

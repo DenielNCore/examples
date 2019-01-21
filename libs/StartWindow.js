@@ -1,5 +1,4 @@
 function StartWindow() {
-
     Sprite.call(this);
 }
 
