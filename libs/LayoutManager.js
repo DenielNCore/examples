@@ -22,8 +22,8 @@ LayoutManager.fitLayout = function(w, h) {
     // console.log(w, h, 'ww');
 
     if (typeof w != "number" || typeof h != "number") {
-        w = Screen.container.clientWidth - LayoutManager.paddingSize * 2;
-        h = Screen.container.clientHeight - LayoutManager.paddingSize * 2;
+        w = Screen.container.clientWidth; //- LayoutManager.paddingSize * 2;
+        h = Screen.container.clientHeight; //- LayoutManager.paddingSize * 2;
     }
 
     if(LayoutManager.width === w && LayoutManager.height === h) return;
