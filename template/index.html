@@ -9,7 +9,7 @@
 <body>
     <div id="wrapper">
         <div id="view-port">
-            <div class="canvas"></div>    
+            <div id="canvas"></div>
         </div>
         <div id="settings-van"><i class="fas fa-bars"></i></div>
         <div id="resize-settings">
@@ -18,11 +18,13 @@
             </div>
             <div class="settings">
                 <label for="width">Ширина</label>
-                <input type="number" name="width" id="settings-width" value="480" />
+                <input type="number" name="width" id="view-width" value="480" disabled/>
+                <input type="range" name="width" id="range-width" min="480" max="1200">
             </div>
             <div class="settings">
                 <label for="height">Высота</label>
-                <input type="number" name="height" id="settings-height" value="480" />
+                <input type="number" name="height" id="view-height" value="480" disabled/>
+                <input type="range" name="height" id="range-height" min="480" max="1200"/>
             </div>
         </div>
     </div>
@@ -38,8 +40,9 @@
 
 
 
-<script type="text/javascript" src="index.js"></script>
 <script type="text/javascript" src="Screen.js"></script>
+<script type="text/javascript" src="Manager.js"></script>
+<script type="text/javascript" src="index.js"></script>
 
 </body>
 </html>
