@@ -9,9 +9,9 @@ Screen.app = null;
 Screen.currentWindow = null;
 
 Screen.init = function (container) {
-    Screen.container = container || document.body.getElementsByClassName('canvas')[0];
+    Screen.container = container || document.body.querySelector('#canvas');
 
-    let app = new PIXI.Application(Screen.size.w, Screen.size.h, {transparent: false, backgroundColor : 0x000000});
+    let app = new PIXI.Application(Screen.size.w, Screen.size.h, {transparent: false, backgroundColor : 0x000000 });
     Screen.container.appendChild(app.view);
 
     app.ticker.add(Screen.tick);
@@ -21,11 +21,6 @@ Screen.init = function (container) {
 
     LayoutManager.fitLayout(Screen.size.w, Screen.size.h);
 
-    Screen.container.addEventListener("resize", LayoutManager.fitLayout);
-
-    // console.dir(document.body.getElementsByClassName('canvas')[0]);
-
-    setInterval(LayoutManager.fitLayout, 100);
 };
 
 Screen.showWindow = function(w) {
@@ -77,6 +72,6 @@ Screen.tick = function() {
     }
 };
 
-Screen.init();
+// Screen.init();
 // Screen.start();
 // Screen.onResize();
